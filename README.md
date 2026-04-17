@@ -79,10 +79,4 @@ F_y = k \frac{q_0 q_i \, dy}{r^3}
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
 
-### 1. Clonar el repositorio
-
-```bash
-git clone https://github.com/tuusuario/proyecto-coulomb.git
-cd proyecto-coulomb
