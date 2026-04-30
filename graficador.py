@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 
 def crear_grafica(x_obj, y_obj, q_obj, cargas, fx_total, fy_total):
     """
-    Crea una gráfica interactiva del sistema de cargas y del vector
+    Gráfica interactiva del sistema de cargas y del vector
     de fuerza neta sobre la carga objetivo.
     """
 
@@ -39,9 +39,7 @@ def crear_grafica(x_obj, y_obj, q_obj, cargas, fx_total, fy_total):
         name=f"Objetivo ({q_obj:.2e} C)"
     ))
 
-    # -----------------------------
-    # Escala inteligente para que la flecha sí se vea
-    # -----------------------------
+
     magnitud = math.sqrt(fx_total**2 + fy_total**2)
 
     xs_cargas = [x_obj] + [c["x"] for c in cargas]
@@ -51,7 +49,6 @@ def crear_grafica(x_obj, y_obj, q_obj, cargas, fx_total, fy_total):
     alto_base = max(ys_cargas) - min(ys_cargas) if len(ys_cargas) > 1 else 2
     escala_base = max(ancho_base, alto_base, 2)
 
-    # Si la fuerza es muy pequeña, la flecha sigue siendo visible.
     if magnitud != 0:
         largo_flecha = escala_base * 0.35
         ux = fx_total / magnitud
@@ -110,9 +107,9 @@ def crear_grafica(x_obj, y_obj, q_obj, cargas, fx_total, fy_total):
     xmin, xmax = min(xs) - margen, max(xs) + margen
     ymin, ymax = min(ys) - margen, max(ys) + margen
 
-    # -----------------------------
-    # Diseño estilo académico / GeoGebra oscuro
-    # -----------------------------
+    # -------
+    # Diseño
+    # -------
     fig.update_layout(
         title=dict(
             text="Plano cartesiano de cargas y vector de fuerza neta",

@@ -29,7 +29,12 @@ def calcular_fuerza_total(q_obj, x_obj, y_obj, cargas):
     fy_total = 0.0
     registros = []
 
+#Utilizamos un ciclo for porque la carga objetivo puede estar influenciada por varias cargas puntuales, 
+# y necesitamos calcular la contribución de cada una para obtener la fuerza neta total.    
+
     for i, carga in enumerate(cargas, start=1):
+
+        #Cada carga se guarda como un diccionario con sus datos.
         q = carga["q"]
         x = carga["x"]
         y = carga["y"]
