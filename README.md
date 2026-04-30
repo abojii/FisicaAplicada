@@ -1,82 +1,62 @@
-# ⚡ Proyecto: Ley de Coulomb - Principio de Superposición
+# ⚡ Física Aplicada
 
-Aplicación web interactiva desarrollada con **Streamlit** para calcular, visualizar y explicar la **fuerza eléctrica neta** que actúa sobre una carga objetivo, aplicando la **Ley de Coulomb** y el **Principio de Superposición**.
+Aplicación interactiva desarrollada en Python con Streamlit para resolver problemas de:
 
----
+- 🔹 Electroestática (Ley de Coulomb)
+- 🔹 Circuitos eléctricos simples (Resistores y Capacitores)
 
-## 🧠 Descripción
-
-Esta aplicación permite ingresar una carga objetivo y múltiples cargas puntuales en el plano cartesiano. A partir de estos datos, el sistema:
-
-- Calcula la fuerza eléctrica que ejerce cada carga sobre la carga objetivo
-- Descompone cada fuerza en sus componentes en X y Y
-- Suma todas las fuerzas mediante el principio de superposición
-- Obtiene la fuerza neta total (vectorial)
-- Calcula la magnitud del vector resultante
-- Muestra una representación gráfica del sistema
-- Explica paso a paso el procedimiento matemático
+Incluye cálculo automático, visualización gráfica y explicación paso a paso del procedimiento.
 
 ---
 
-## 📐 Fundamento teórico
+## 🚀 Características principales
 
-### Ley de Coulomb
+### ⚡ 1. Ley de Coulomb
+- Cálculo de fuerza eléctrica neta
+- Soporte para múltiples cargas
+- Visualización tipo GeoGebra
+- Desglose paso a paso del procedimiento
 
-La fuerza entre dos cargas puntuales se define como:
-
-\[
-F = k \frac{q_1 q_2}{r^2}
-\]
-
-Donde:
-
-- \( F \): fuerza eléctrica
-- \( k \): constante de Coulomb (\(9 \times 10^9\))
-- \( q_1, q_2 \): cargas
-- \( r \): distancia entre ellas
-
-### Forma vectorial
-
-\[
-F_x = k \frac{q_0 q_i \, dx}{r^3}
-\]
-\[
-F_y = k \frac{q_0 q_i \, dy}{r^3}
-\]
+### 🔌 2. Circuitos eléctricos
+- Resistores y capacitores
+- Conexión en serie y paralelo
+- Cálculo de:
+  - Resistencia/Capacitancia equivalente
+  - Corriente o carga
+  - Voltajes en cada elemento
+- Dibujo automático del circuito
+- Procedimiento explicado paso a paso
 
 ---
 
-## 🔢 Funcionalidades
+## 🧠 Conceptos aplicados
 
-- Entrada flexible de datos (notación científica: `2x10^-6`, `2e-6`, etc.)
-- Ingreso de posiciones en formato `(x,y)`
-- Cálculo automático de fuerzas individuales
-- Suma vectorial (superposición)
-- Visualización gráfica tipo plano cartesiano
-- Vector de fuerza neta dinámico
-- Procedimiento paso a paso explicado
-- Interfaz moderna estilo aplicación web
+- Ley de Coulomb  
+- Principio de superposición  
+- Ley de Ohm  
+- Leyes de Kirchhoff  
+- Circuitos en serie y paralelo  
+- Capacitancia  
 
 ---
 
-## 📊 Ejemplo de uso
+## 🛠️ Tecnologías utilizadas
 
-### Entrada:
-
-- Carga objetivo:
-  - \( q_0 = 2 \times 10^{-6} \)
-  - Posición: (0,0)
-
-- Cargas:
-  - \( q_1 = 3 \times 10^{-6} \) en (1,0)
-  - \( q_2 = -4 \times 10^{-6} \) en (0,1)
-
-### Resultado esperado:
-
-- Fuerza hacia arriba e izquierda
-- Vector neto diagonal
-- Magnitud calculada automáticamente
+- Python
+- Streamlit
+- Pandas
+- Matplotlib
 
 ---
+
+## ▶️ Cómo ejecutar el proyecto
+
+1. Clonar repositorio:
+
+```bash
+git clone https://github.com/tu_usuario/FisicaAplicada.git
+cd FisicaAplicada
+
+
 
 
