@@ -56,13 +56,6 @@ La aplicación:
 - Muestra el desarrollo usando determinantes
 - Grafica los vectores en 3D
 
-### Fuerza magnética
-Se implementa:
-
-\[
-\vec{F}=I(\vec{L}\times\vec{B})
-\]
-
 La aplicación:
 - Calcula la fuerza magnética
 - Obtiene el vector del conductor
