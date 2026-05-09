@@ -5,6 +5,7 @@ from pagina_circuitos import mostrar_pagina_circuitos
 from conversiones import convertir_notacion, parsear_coordenada
 from calculos import calcular_fuerza_total, calcular_fuerza_individual
 from graficador import crear_grafica
+from pagina_producto_vectorial import mostrar_pagina_producto_vectorial
 
 
 
@@ -200,8 +201,11 @@ summary * {
 st.title("⚡ Fisica Aplicada")
 st.caption("Ejercicios resueltos de electrostática y circuitos eléctricos")
 
-
-tab1, tab2 = st.tabs(["⚡ Ley de Coulomb", "🔌 Circuitos simples"])
+tab1, tab2, tab3 = st.tabs([
+    "⚡ Ley de Coulomb",
+    "🔌 Circuitos simples",
+    "🧲 Producto vectorial"
+])
 # ---------------------------------------------------
 # LAYOUT
 # ---------------------------------------------------
@@ -469,3 +473,6 @@ with tab1:
 
 with tab2:
     mostrar_pagina_circuitos()
+
+with tab3:
+    mostrar_pagina_producto_vectorial()
